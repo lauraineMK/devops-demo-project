@@ -7,7 +7,9 @@ data:
     <!DOCTYPE html>
     <html>
     <head>
+      <meta charset="UTF-8">
       <title>DevOps Demo</title>
+
       <style>
         body {
           margin: 0;
@@ -25,32 +27,32 @@ data:
         }
 
         .container {
-          margin-top: 50px;
+          margin-top: 60px;
         }
 
         h1 {
+          font-size: 42px;
           color: #ea580c;
-          font-size: 40px;
         }
 
-        p {
-          font-size: 18px;
+        .subtitle {
+          font-size: 20px;
+          margin-top: 10px;
         }
 
         .card {
           background: white;
-          margin: 30px auto;
-          padding: 20px;
-          width: 300px;
-          border-radius: 10px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+          margin: 40px auto;
+          padding: 25px;
+          width: 320px;
+          border-radius: 12px;
+          box-shadow: 0 6px 15px rgba(0,0,0,0.2);
         }
 
-        footer {
+        .footer {
           margin-top: 50px;
-          padding: 10px;
-          font-size: 14px;
-          color: #555;
+          font-size: 16px;
+          color: #444;
         }
       </style>
     </head>
@@ -58,23 +60,30 @@ data:
     <body>
 
       <header>
-        DevOps Project - ArgoCD + Kubernetes
+         DevOps Project - ArgoCD + Kubernetes
       </header>
 
       <div class="container">
         <h1>Bienvenue </h1>
-        <p>Application déployée automatiquement avec GitOps</p>
+
+        <p class="subtitle">
+          This is a Spring Boot demo application – version <strong>v1.0</strong>
+        </p>
 
         <div class="card">
-          <h3>Version 1.0</h3>
-          <p>CI/CD avec Jenkins</p>
-          <p>Déploiement avec ArgoCD</p>
+          <h3>CI/CD Pipeline</h3>
+          <p>Built with Jenkins</p>
+          <p>Deployed with ArgoCD</p>
         </div>
 
+        <p class="footer">
+          End-to-end CI/CD pipeline with Kubernetes, Jenkins and ArgoCD
+        </p>
       </div>
 
+   
       <footer>
-        © 2026 - DevOps Demo by Lauraine
+         2026 - DevOps Demo by Lauraine
       </footer>
 
     </body>
