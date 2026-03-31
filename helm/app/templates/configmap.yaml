@@ -1,0 +1,81 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-app-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>DevOps Demo</title>
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(135deg, #ffffff, #f97316);
+          color: #1e293b;
+          text-align: center;
+        }
+
+        header {
+          background-color: #ea580c;
+          color: white;
+          padding: 20px;
+          font-size: 24px;
+        }
+
+        .container {
+          margin-top: 50px;
+        }
+
+        h1 {
+          color: #ea580c;
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        .card {
+          background: white;
+          margin: 30px auto;
+          padding: 20px;
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        footer {
+          margin-top: 50px;
+          padding: 10px;
+          font-size: 14px;
+          color: #555;
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <header>
+        DevOps Project - ArgoCD + Kubernetes
+      </header>
+
+      <div class="container">
+        <h1>Bienvenue </h1>
+        <p>Application déployée automatiquement avec GitOps</p>
+
+        <div class="card">
+          <h3>Version 1.0</h3>
+          <p>CI/CD avec Jenkins</p>
+          <p>Déploiement avec ArgoCD</p>
+        </div>
+
+      </div>
+
+      <footer>
+        © 2026 - DevOps Demo by Lauraine
+      </footer>
+
+    </body>
+    </html>
